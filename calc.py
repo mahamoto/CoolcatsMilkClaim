@@ -2,7 +2,7 @@ import time
 import os
 import brownie
 
-sell_price = 2.157
+ids = [1,2,3,4]
 
 milk_address = "0x1599fE55Cda767b1F631ee7D414b41F5d6dE393d"
 treasury_address = "0x11D97F31b489B9c57507839530Ab9EA910979c68"
@@ -58,7 +58,6 @@ def calc_claim(catId):
     return claim_amount
 
 if __name__ == "__main__":
-    ids = [1,2,3,4]
     max_possible_reward = calc_reward(contract_starttime)
     milk_sum = 0
     for id in ids:
